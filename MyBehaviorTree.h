@@ -31,14 +31,6 @@ public:
   virtual bool run(); //execute this task
 };
 
-class MySquenceNode : public MyTaskNode
-{
-public:
-
-  //run the tasks in sequence, return false immediately after a failed task,
-  //return true when all tasks finish successfully
-  virtual bool run(); //execute this task
-};
 
 //A dummy behavior tree
 class MyBehaviorTree
@@ -51,3 +43,6 @@ private:
 
   MyTaskNode * m_root; //root of the behavior tree
 };
+
+//Note: You are free to create more types of nodes
+
